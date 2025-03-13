@@ -1,0 +1,16 @@
+header{
+    margin-top: 60px;
+}
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__title{
+    color: #FFFFFF;
+    font-size: 28px;
+}
+ul{
+    display: flex;
+    gap: 45px;
+}

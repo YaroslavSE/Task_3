@@ -1,0 +1,32 @@
+.color-block{
+    width: 20%;
+    height: 25%;
+    position: relative;
+}
+.color-block:hover{
+    cursor: pointer;
+}
+.copy-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: rgba(255, 255, 255, 0.5) 2px solid;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.color-block:hover .copy-button{
+    opacity: 1;
+}
+.name{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}

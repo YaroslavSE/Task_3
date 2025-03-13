@@ -1,0 +1,24 @@
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.palette-panel{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #FFFFFF;
+}
+.palette-arrow{
+    width: 18px;
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+span{
+    font-size: 18px;
+}
+.grid-palette{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}

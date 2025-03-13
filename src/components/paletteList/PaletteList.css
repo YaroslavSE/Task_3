@@ -1,0 +1,6 @@
+.palette-list{
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
