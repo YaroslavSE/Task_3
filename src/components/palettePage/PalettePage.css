@@ -17,6 +17,9 @@
 span{
     font-size: 18px;
 }
+.sound{
+    cursor: pointer;
+}
 .grid-palette{
     display: flex;
     flex-wrap: wrap;

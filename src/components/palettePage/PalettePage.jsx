@@ -1,8 +1,10 @@
 import { Link } from 'react-router';
 import './PalettePage.css'
 import ColorBlock from '../colorBlock/ColorBlock';
+import { useState } from 'react';
 
 export default function PalettePage({palette}){
+    const [soundState, setSoundState] = useState("on");
     return(
         <div className='page-wrapper'>
             <div className="palette-panel">
@@ -12,12 +14,12 @@ export default function PalettePage({palette}){
                     </svg> 
                     <span>Back</span>
                 </Link>
-                <div className="sound">Sound on 🔊</div>
+                <div className="sound" onClick={() => soundState === "on"? setSoundState("off") : setSoundState("on")}>Sound {soundState} 🔊</div>
             </div>
             <div className='grid-palette'>
                 {palette.colors.map((item, index) => (
                     <>
-                        <ColorBlock key={index} color={item.color} name={item.name} />
+                        <ColorBlock key={index} color={item.color} name={item.name} soundState={soundState}/>
                     </>
                 ))}
                 

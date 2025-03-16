@@ -1,12 +1,14 @@
-import { useRef } from 'react';
+import { useRef,} from 'react';
 import './ColorBlock.css';
 import audio from '../../import/src_notify.mp3';
 
-export default function ColorBlock({color, name}){
+export default function ColorBlock({color, name, soundState}){
     const audioRef = useRef(null);
     function handleClick(){
         navigator.clipboard.writeText(color);
-        playSound();
+        if(soundState === "on"){
+            playSound();
+        }
     }
     function playSound(){
         if(!audioRef.current){
